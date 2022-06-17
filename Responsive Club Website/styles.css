@@ -1,0 +1,198 @@
+/*GLOBAL STYLINGS*/
+@keyframes logo-rotate {
+
+    /* animation for the rotation of the Buddha logo*/
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+/* Gentium Plus Font || font-family: 'Gentium Plus', serif; */
+
+:root {
+
+    --main-color: #001a2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Gentium Plus', serif;
+}
+
+
+main {
+
+    background-color: var(--main-color);
+}
+
+
+/* END OF GLOBAL STYLINGS */
+
+/* BEGGINING STYLE => HEADER */
+
+header {
+    height: 100vh;
+    background-image: url("/Responsive Club Website/photos/pim-myten-m41k1lTzjVM-unsplash_opacity.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.buddha-logo {
+    position: absolute;
+    bottom: 5rem;
+    inset: 0;
+    margin: auto;
+    animation: logo-rotate 8s infinite linear;
+    margin-bottom: 27rem;
+}
+
+.head {
+    color: var(--main-color);
+    font-family: 'Gentium Plus', serif;
+
+
+}
+
+.head-title-container {
+    font-size: 1.6rem; 
+    height: 20%;
+    text-align: center;
+   padding-top: 10%;
+   
+   
+}
+
+.head-title {
+    text-align: center;
+    line-height: 1;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.head-title-c{
+    color: #dbdb0b;
+    text-align: right;
+    width: 13rem;
+    margin: auto;
+    margin-top: -1%;
+}
+
+.head-subtitle{
+    padding-top: 19%;
+    width: 46%;
+    margin: auto;
+    inset: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.head-return{
+    padding-top: 13rem;
+    width: 46%;
+    margin: auto;
+    inset: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* >>>>>>>>ARROW<<<<<<*/
+.arrow {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .arrow::before,
+  .arrow::after {
+    position: relative;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+  }
+  
+  .arrow::before {
+    transform: rotate(45deg);
+  }
+  
+  .arrow::after {
+    left: 21px;
+    bottom: 2px;
+    transform: rotate(-45deg);
+  }
+
+  /*>>>>>ARROW END<<<<<<*/
+
+@media only screen and (max-width: 980px){
+    .head-title-container{
+       padding-top: 15%;
+    }
+
+    .head-subtitle{
+        width: 20rem;
+        padding-top: 20rem;
+        margin: auto;
+        text-align: center;
+        text-transform: uppercase;
+       
+        
+    }
+    .head-return{
+        padding-top: 9rem;
+       
+    }
+}
+
+@media only screen and (max-width: 768px){
+  
+.head-title-container {
+    width: 46%;
+    font-size: 1.6rem; 
+    margin: auto;
+}
+
+.head-title{
+   font-size: 4rem;  
+}
+
+.head-title-c {
+    text-align: right;
+    margin-top: -3%;
+    
+}
+
+.head-subtitle{
+    width: 15rem;
+    padding-top: 18rem;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.head-return{
+    display: none;
+}
+
+.arrow {
+   
+   margin: 0 auto;
+  }
+}
